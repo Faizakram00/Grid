@@ -14,37 +14,33 @@ main{
     width: 100%;
     background-color: black;
     display: grid;
-    gap: 15px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    /* gap: 15px; */
+    grid-template-columns: 25% 25% 50%;
+    grid-template-rows: 10% 60% 30%;
 
     grid-template-areas: 
-     "top-center top-center top-center"
-     "left-center center-bottom right-center"
-     "left-bottom center-bottom right-bottom"
-    ;
+    "header header header"
+    "left-center left-center right"
+    "left-bottom1 left-bottom2 right";
+    
 }
-.top-center{
-    background-color: lightblue;
-    grid-area: top-center;
+.header{
+    background-color: blue;
+    grid-area: header;
 }
 .left-center{
-    background-color: lightcoral;
+    background-color: blueviolet;
     grid-area: left-center;
 }
-.left-bottom{
-    background-color: lightcyan;
-    grid-area: left-bottom;
+.right{
+    background-color: brown;
+    grid-area: right;
 }
-.center-bottom{
-    background-color: lightgoldenrodyellow;
-    grid-area: center-bottom;
+.left-bottom1{
+    background-color: burlywood;
+    grid-area: left-bottom1;
 }
-.right-center{
-    background-color: lightgreen;
-    grid-area: right-center;
-}
-.right-bottom{
-    background-color: lightpink;
-    grid-area: right-bottom;
+.left-bottom2{
+    background-color: cadetblue;
+    grid-area: left-bottom2;
 }
