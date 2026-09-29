@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: azure;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: crimson;
+    border: 2px solid white;
+    align-self: center;
+    justify-self: center;
+}
