@@ -14,33 +14,27 @@ main{
     width: 100%;
     background-color: black;
     display: grid;
-    /* gap: 15px; */
-    grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 10% 60% 30%;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-rows: 65% 35%;
 
     grid-template-areas: 
-    "header header header"
-    "left-center left-center right"
-    "left-bottom1 left-bottom2 right";
-    
+    "top1 top2 top3"
+    "bottom bottom top3";
+  
 }
-.header{
-    background-color: blue;
-    grid-area: header;
+.top1{
+    background-color: darkblue;
+    grid-area: top1;
 }
-.left-center{
-    background-color: blueviolet;
-    grid-area: left-center;
+.top2{
+    background-color: darkcyan;
+    grid-area: top2;
 }
-.right{
-    background-color: brown;
-    grid-area: right;
+.top3{
+    background-color: darkgoldenrod;
+    grid-area: top3;
 }
-.left-bottom1{
-    background-color: burlywood;
-    grid-area: left-bottom1;
-}
-.left-bottom2{
-    background-color: cadetblue;
-    grid-area: left-bottom2;
+.bottom{
+    background-color: darkgreen;
+    grid-area: bottom;
 }
